@@ -168,14 +168,14 @@ def section(title, value):
 
 def print_report(i, full):
     section("Package name", i.get("package"))
-    section("versionCode", i.get("versionCode"))
-    section("versionName", i.get("versionName"))
+    section("Version Code", i.get("versionCode"))
+    section("Version Name", i.get("versionName"))
     if i["abis"]:
         section("Supported ABIs", ", ".join(i["abis"]))
         has64 = any("64" in a for a in i["abis"])
         section("64 bit architecture support", "YES" if has64 else "NO")
     section("Minimal supported Android version", sdk_str(i.get("minSdk", 1)))
-    section("Target SDK", sdk_str(i.get("targetSdk", i.get("minSdk", 1))))
+    section("Target Android version", sdk_str(i.get("targetSdk", i.get("minSdk", 1))))
     if i["libs"]:
             section("Native libraries", ", ".join(i["libs"]))
 
