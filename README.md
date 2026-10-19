@@ -45,10 +45,10 @@ chmod +x apkinfo.py
 Package name
 app.game
 
-versionCode
+Version Code
 23
 
-versionName
+Version Name
 1.2.1
 
 Supported ABIs
@@ -60,7 +60,7 @@ YES
 Minimal supported Android version
 Android 8.0.0 - API level 26
 
-Target SDK
+Target Android version
 Android 9 - API level 28
 
 Native libraries
